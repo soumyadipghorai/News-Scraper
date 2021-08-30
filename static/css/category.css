@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+}
+
+.container{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.news-div{
+    margin: 15px 5px 15px 5px;
+    padding: 1.2% ;
+    display: flex;
+    border-radius: 10px;
+    
+    border: 0.4px solid rgb(158, 158, 158);
+}
+    .news-div:hover{
+        box-shadow: 0px 0px 5px rgb(148, 148, 148);
+    }
+
+.content{
+    display: flex;
+}
+
+.image, .text {
+    padding: 10px;
+}
+
+h3, p {
+    margin: 3px;
+    padding: 5px;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+    h3 a{
+        text-decoration: none;
+        color: rgb(70, 69, 69);
+    }
+
+        h3 a:hover{
+            color: rgb(107, 107, 107);
+        }
+
+.header{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 41%;
+}

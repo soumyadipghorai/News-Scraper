@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block head %} 
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css') }}">
+    <title>News Scraper </title>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="news-div">
+            <a href="/firstpost">
+                <img style="max-width: 250px;" src="static\images\firstpost-logo-vector.png" alt="firstpost-news">
+            </a>
+        </div>
+        <div class="news-div">
+            <a href="/the-indian-express">
+                <img style="max-width: 250px;" src="static\images\TIE.jpg" alt="indianexpress-news">
+            </a>
+        </div>
+        <div class="news-div">
+            <a href="/indiatoday">
+                <img style="max-width: 250px;" src="static\images\indiatoday-logo.jpg" alt="indiatoday-news">
+            </a>
+        </div>
+        <div class="news-div">
+            <a href="/indiatv">
+                <img style="max-width: 250px;" src="static\images\indiatv.jpg" alt="ndtv-news">
+            </a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+<footer>
+    Designed by <span> <b>Soumyadip Ghorai</b> </span> with ❤️
+</footer>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/category.css') }}">
+    <title>News Scraper | India today News </title>
+{% endblock %}
+{% block body %}
+    <div class="container">
+        {% for i in range(3) %}
+            <div class="news-div">
+                {% for j in range(3) %}
+                    {% if j == 0 %}
+                    <div class="image">
+                        <img src="{{ News[i][0][j] }}" alt="Girl in a jacket" width="250" height="150">
+                    </div>
+                    {% elif j == 1 %}
+                    <div class="text">
+                        <h3><a href="{{ News[i][0][3] }}" target="_blank">{{ News[i][0][j] }}</a></h3>
+                        <p>{{ News[i][0][2] }}</p>
+                    </div>
+                    {% endif %} 
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+    
+{% endblock %}
