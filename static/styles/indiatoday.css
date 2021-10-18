@@ -44,8 +44,39 @@ h3, p {
             color: rgb(107, 107, 107);
         }
 
+/* h1{
+    margin: 1.5%;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+} */
+
 .header{
     margin-top: 1%;
     margin-bottom: 2%;
     margin-left: 41%;
+}
+
+@media (max-width: 680px){
+    .image img{
+        width: 150px;
+        height: 100px;
+    }
+
+    .container{
+        padding-left: 5%;
+        padding-right: 3%;
+    }
+
+    .header{
+        margin-left: 31%;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+    
+    p{
+        font-size: 12px;
+    }
 }

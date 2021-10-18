@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block head %} 
-    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename= 'styles/index.css')}}">
     <title>News Scraper </title>
 {% endblock %}
 
@@ -9,22 +9,22 @@
     <div class="container">
         <div class="news-div">
             <a href="/firstpost">
-                <img style="max-width: 250px;" src="static\images\firstpost-logo-vector.png" alt="firstpost-news">
+                <img src="static\images\firstpost-logo-vector.png" alt="firstpost-news">
             </a>
         </div>
         <div class="news-div">
             <a href="/the-indian-express">
-                <img style="max-width: 250px;" src="static\images\TIE.jpg" alt="indianexpress-news">
+                <img src="static\images\TIE.jpg" alt="indianexpress-news">
             </a>
         </div>
         <div class="news-div">
             <a href="/indiatoday">
-                <img style="max-width: 250px;" src="static\images\indiatoday-logo.jpg" alt="indiatoday-news">
+                <img src="static\images\indiatoday-logo.jpg" alt="indiatoday-news">
             </a>
         </div>
         <div class="news-div">
             <a href="/indiatv">
-                <img style="max-width: 250px;" src="static\images\indiatv.jpg" alt="ndtv-news">
+                <img src="static\images\indiatv.jpg" alt="ndtv-news">
             </a>
         </div>
     </div>

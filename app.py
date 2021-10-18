@@ -108,7 +108,8 @@ def indiatoday() :
                                       "h2", None, "p", None, "a", None, True)
 
         main_news.append(sub_news)
-    
+    main_news.append('India Today')
+    main_news.append('static\images\indiatoday-logo.jpg')
     return render_template('indiatoday.html', News = main_news)
 
 @app.route("/firstpost")
@@ -123,8 +124,9 @@ def firstpost() :
                                       "h3", "main-title", "p", "copy", "a", None, True)
 
         main_news.append(sub_news)
-    
-    return render_template('firstpost.html', News = main_news)
+    main_news.append('First Post')
+    main_news.append('static\images\Firstpost-logo-vector.png')
+    return render_template('indiatoday.html', News = main_news)
     
 @app.route("/the-indian-express")
 def theIndianExpress() : 
@@ -138,8 +140,9 @@ def theIndianExpress() :
                                       "h2", "title", "p", None, "a", None, True)
 
         main_news.append(sub_news)
-    
-    return render_template('theindianexpress.html', News = main_news)
+    main_news.append('The Indian Express')
+    main_news.append('static\images\TIE.jpg')
+    return render_template('indiatoday.html', News = main_news)
 
 @app.route("/indiatv")
 def indiatv() :
@@ -153,21 +156,28 @@ def indiatv() :
                                       "h3", "title", "p", "dic", "a", None, True)
 
         main_news.append(sub_news)
-    
-    return render_template('indiatv.html', News = main_news) 
+    main_news.append('India TV')
+    main_news.append('static\images\indiatv.jpg')
+    return render_template('indiatoday.html', News = main_news) 
 
 @app.route("/india")
 def india() :
-    return render_template('india.html', News = categoryNews("india"))
+    subList = categoryNews("india")
+    subList.append('India')
+    return render_template('india.html', News = subList)
 
 @app.route("/world")
 def world() :
-    return render_template('world.html', News = categoryNews("world"))
+    subList = categoryNews("world")
+    subList.append('World')
+    return render_template('india.html', News = subList)
 
 @app.route("/Sports")
 def Sports() :
-    return render_template('Sports.html', News = categoryNews("sports"))
-
+    subList = categoryNews("sports")
+    subList.append('Sports')
+    return render_template('india.html', News = subList)
+    
 
 if __name__ == "__main__" : 
     app.run(debug= True)

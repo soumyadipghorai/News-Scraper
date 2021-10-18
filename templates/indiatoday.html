@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="{{url_for('static', filename='css/newspage.css') }}">
-    <title>News Scraper | India today News </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/indiatoday.css') }}">
+    <title>News Scraper | {{News[-2]}} </title>
 {% endblock %}
 {% block body %}
     <div class="header">
-        <img style="max-width: 250px;" src="static\images\indiatoday-logo.jpg" alt="indiatoday-news">
+        <img style="max-width: 250px;" src={{News[-1]}} alt="indiatoday-news">
     </div>
 
     <div class="container">
