@@ -43,6 +43,11 @@ firstly I have tested various news papers on jupyter notebook and selected the b
 |   |--- indiatoday.html
 |   |--- layout.html
 |
+|---- app.py
+|---- README.md
+|---- test.ipynb 
+|---- requirements.txt
+|
 ```
 
 ## Demo : 
