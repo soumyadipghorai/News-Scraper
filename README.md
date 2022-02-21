@@ -19,6 +19,32 @@ firstly I have tested various news papers on jupyter notebook and selected the b
 * User can get redirected to the actual article if he wants 
 <br>
 
+## Document structure : 
+
+```
+|---- result
+|   |---- screenshot1.png
+|   |---- screenshot2.png
+|   |---- screenshot3.png
+|
+|---- static
+|   |---- images 
+|   |   |---
+|   |   
+|   |---- styles
+|   |   |--- index.css
+|   |   |--- india.css
+|   |   |--- indiatoday.css
+|   |   |--- layout.css
+|
+|---- templates
+|   |--- index.html
+|   |--- india.html
+|   |--- indiatoday.html
+|   |--- layout.html
+|
+```
+
 ## Demo : 
 
 When you will visit the site you will see this home page.
